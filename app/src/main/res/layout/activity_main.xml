@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffdddd"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn_course"
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/ic_course_selected"
+            android:text="课程"/>
+        <RadioButton
+            android:id="@+id/btn_exercise"
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/ic_exercise"
+            android:text="习题"/>
+        <RadioButton
+            android:id="@+id/btn_message"
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/ic_message"
+            android:text="资讯"/>
+
+        <RadioButton
+            android:id="@+id/btn_my"
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/ic_my"
+            android:text="我"/>
+
+
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/default_icon" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="用户名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="姓名："
+            android:textColor="#627632"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/et_realname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/editTextStyle"
+            android:ems="12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="性别："
+            android:textColor="#627632"
+            android:textSize="23sp" />
+<RadioGroup
+    android:id="@+id/group_sex"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rbtn_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="男"
+        android:checked="true"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/rbtn_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="女"
+        android:textSize="20sp" />
+</RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择兴趣爱好"
+            android:textColor="#9f9f9f"
+            android:textSize="23sp" />
+
+        <CheckBox
+            android:id="@+id/cb_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java面向对象"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android项目开发"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据库管理"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="#f7a421"
+            android:text="确认"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
